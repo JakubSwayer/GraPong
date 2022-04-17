@@ -111,12 +111,12 @@ let pilka = {
   },
   update: function() {
 
-    if (this.x < 130 && this.x > 125 && this.y < (list[0].y + player_height + radius) && this.y > list[0].y - radius) {
+    if (this.x < 130 && this.x > 120 && this.y < (list[0].y + player_height + radius) && this.y > list[0].y - radius) {
       this.dx = -this.dx;
       this.dy = (Math.random() - 0.5) * 8;
       audio.play();
     }
-    if (this.x > innerWidth - 130 && this.x < innerWidth - 125 && this.y < (list[1].y + player_height + radius) && this.y > list[1].y - radius) {
+    if (this.x > innerWidth - 130 && this.x < innerWidth - 120 && this.y < (list[1].y + player_height + radius) && this.y > list[1].y - radius) {
       this.dx = -this.dx;
       this.dy = (Math.random() - 0.5) * 8;
       audio.play();
