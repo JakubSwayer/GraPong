@@ -226,13 +226,17 @@ window.onkeydown = function(event) {
       if (menu_state == 2) {
         menu_state = 1;
       }
-      audio.play();
+      if (menu) {
+              audio.play();
+      }
       break;
     case "ArrowDown":
       if (menu_state == 1) {
         menu_state = 2;
       }
-      audio.play();
+      if (menu) {
+              audio.play();
+      }
       break;
     case "Enter":
       if (menu && menu_state == 1) {
